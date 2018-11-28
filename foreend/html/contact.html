@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联系客服</title>
+	<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/personal.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<!--内容-->
+		<div class="content">
+			<div class="content_main">
+				<!--路径-->
+				<div class="path">
+					<span>首页 > 个人中心 > 联系客服</span>
+				</div>
+				<!--侧栏-->
+				<div class="sidebar">
+					<ul>
+						<div class="sidebar_sub">
+							<p>订单管理</p>
+							<a href="myorder.html" class="myorder_nav">我的订单</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>账户中心</p>
+							<a href="personal.html" class="personal_nav">个人中心</a>
+							<a href="userinfo.html" class="userinfo_nav">用户信息</a>
+							<a href="mycollect.html" class="mycollect_nav">我的收藏</a>
+							<a href="mytracks.html" class="mytracks_nav">我的足迹</a>
+							<a href="address.html" class="address_nav">收货地址</a>
+							<a href="mycoupon.html" class="mycoupon_nav">我的优惠券</a>
+							<a href="immp.html" class="immp_nav">资质认证</a>
+							<a href="myinvoice.html" class="myinvoice_nav">我的发票</a>
+							<a href="contact.html" class="siedbar_hover contact_nav">联系客服</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>消息中心</p>
+							<a href="system.html" class="system_nav">系统消息</a>
+						</div>
+					</ul>
+				</div>
+				<!--右侧内容-->
+				<div class="personal">
+					<!--联系客服-->
+					<div class="contact_main">
+						<h2 class="ava_nav">联系客服</h2>
+						<p class="browred">确认联系方式</p>
+						<!--one-->
+						<div class="contact_content">
+							<div class="contact_start">
+								温馨提示：您可以预约<i>1分钟后</i>，或者<i>24小时内</i>的任何时间，我们将主动给你您回电
+							</div>
+							<table>
+								<tr style="background: #f7f7f7;color: #666;">
+									<td width="15%">回电号码</td>
+									<td width="30%">申请时间</td>
+									<td width="30%">预约回电时间</td>
+									<td width="15%">咨询内容</td>
+									<td width="10%">操作</td>
+								</tr>
+								<tr>
+									<td>138****8000</td>
+									<td>2018-03-12 13:21:20</td>
+									<td>2018-03-13 10:01:00</td>
+									<td>商品咨询</td>
+									<td><a href="javascript:;">取消</a></td>
+								</tr>
+								<tr class="no_cancal">
+									<td>138****8000</td>
+									<td>2018-03-12 13:21:20</td>
+									<td>2018-03-13 10:01:00</td>
+									<td>商品咨询</td>
+									<td><a href="javascript:;">已取消</a></td>
+								</tr>
+							</table>
+							<div class="contact_inp">
+								<div class="contact_inp_phone">
+									<span>手机号码</span>
+									<input type="text" placeholder="请在此输入公司详细地址" />
+								</div>
+								<div class="contact_inp_stuido">
+									<span>座机号码</span>
+									<input type="text" placeholder="区号" class="stuido_one" />
+									<i>—</i>
+									<input type="text" placeholder="输入座机号" class="stuido_two" />
+									<p>*不支持分机号</p>
+								</div>
+							</div>
+							<div class="call_back">
+								<button>尽快回电</button>
+								<span>选择其他回电时间></span>
+							</div>
+							<p class="call_me">如需电话联系我们,请拨打<i>400-028-8888</i></p>
+						</div>
+						<!--成功-->
+						<div class="contact_yes">
+							<img src="../img/avapas.png">
+							<h4>预约电话服务成功，请耐心等待</h4>
+							<p>咨询类型：<span>订单咨询</span><i>|</i>联系方式：<span>158****2541</span><i>|</i>回电时间：<span>2018年4月3日 12:30:00</span></p>
+							<button>返回</button>
+							<h6>感谢您使用医加预约电话服务，请您保持手机通畅，注意接听号码为<i>400-028-8888</i>的来电</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--弹窗-->
+			<div class="contact_alert">
+				<div class="contact_text">
+					<h2>选择时间<p class="address_hide">╳</p></h2>
+					<div class="address_text_inp">
+						<h4>为了能更好为您服务，请选择1小时后的时间</h4>
+						<div class="contact_time">
+							<p>选择时间</p>
+							<input type="text" class="company time_year" value="今天" readonly="readonly">
+							<ul class="select_ul select_year">
+								<li>今天</li>
+								<li>明天</li>
+							</ul>
+							<input type="text" class="company time_shi" value="12" readonly="readonly"><span>时</span>
+							<ul class="select_ul select_shi">
+								<li>9</li>
+								<li>11</li>
+								<li>13</li>
+								<li>15</li>
+								<li>17</li>
+							</ul>
+							<input type="text" class="company time_fen" value="12" readonly="readonly"><span>分</span>
+							<ul class="select_ul select_fen">
+								<li>10</li>
+								<li>20</li>
+								<li>30</li>
+								<li>40</li>
+								<li>50</li>
+							</ul>
+						</div>
+						<div class="contact_box">
+							<p>选择问题</p>
+							<input type="text" class="company" value="选择问题" readonly="readonly">
+							<ul class="select_ul">
+								<li>商品询价</li>
+								<li>订单咨询</li>
+								<li>发票咨询</li>
+								<li>其他咨询</li>
+							</ul>
+						</div>
+						<p>温馨提示：您可以预约1分钟后，或者24小时内的任何时间，我们将主动给您电话</p>
+					</div>
+					<div class="operate">
+						<button class="operate_yes">确认</button>
+						<button class="operate_on">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="footer"></div>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/personal.js" ></script>
+	</body>
+</html>

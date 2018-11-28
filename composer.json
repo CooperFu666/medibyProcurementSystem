@@ -1,0 +1,12 @@
+{
+  "require": {
+    "monolog/monolog": "^1.23",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

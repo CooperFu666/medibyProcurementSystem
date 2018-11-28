@@ -1,0 +1,346 @@
+/*初始化*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ccc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ccc;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ccc;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ccc;
+}
+body{
+	background: #f5f5f5;
+}
+/*顶部*/
+.top{
+	width: 100%;
+	height: 30px;
+	background: #e5e5e5;
+	border-bottom: 1px solid #dcdcdc;
+}
+.top_main{
+	width: 1002px;
+	height: 30px;
+	line-height: 30px;
+	background: #e5e5e5;
+	margin: 0 auto;
+}
+.yj_index{
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	color: #696969;
+	transition: .5s all ease;
+}
+.yj_index:hover{
+	transition: .5s all ease;
+	color: #2dad69;
+}
+.top_new{
+	float: right;
+	/*width: 308px;*/
+	height: 30px;
+	line-height: 10px;
+}
+.top_new li{
+	float: left;
+	padding: 0 20px;
+	border-right: 1px solid #cacaca;
+	height: 11px;
+	margin-top: 10px;
+}
+.top_new li a{
+	font-size: 12px;
+	color: #696969;
+	transition: .5s all ease;
+}
+.top_new li a:hover{
+	transition: .5s all ease;
+	color: #2dad69;
+}
+/*头部*/
+.header{
+	width: 100%;
+	height: 130px;
+	background: #f5f5f5;
+}
+.header_main{
+	width: 1002px;
+	height: 130px;
+	margin: 0 auto;
+}
+.logo{
+	width: 200px;
+	height: 130px;
+	float: left;
+}
+.logo a{
+	display: inline-block;
+	position: relative;
+}
+.logo .logo1{
+	margin-top: 18px;
+	animation: mylogo1 2s infinite;
+}
+@keyframes mylogo1 {
+    0% {
+		transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -8px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+.logo .logo2{
+	position: absolute;
+	top: 116px;
+	left: 25px;
+	animation: mylogo2 2s infinite;
+}
+@keyframes mylogo2 {
+    0% {
+		transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.logo .logo3{
+	position: absolute;
+	top: 51px;
+	left: 82px;
+}
+.header_main span{
+	font-size: 22px;
+	color: #2fad68;
+	line-height: 160px;
+}
+.hots{
+	background: #fff;
+}
+.hots h1{
+	border-bottom: 1px solid #e8e8e8;
+	padding-left: 20px;
+}
+.hots ul{
+	border: none !important;
+}
+/*检测登录状态*/
+.test_login{
+	width: 100%;
+	height: 74px;
+}
+.test_login_main{
+	margin: 0 auto;
+	width: 1002px;
+	height: 74px;
+	background: #fff;
+	box-sizing: border-box;
+	border: 1px dashed #c7c7c7;
+}
+.test_login_main img{
+	float: left;
+	margin: 29px 12px 0 18px;
+}
+.test_login_main span{
+	font-size: 16px;
+	color: #666;
+	line-height: 74px;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+.test_login_main button{
+	width: 150px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 2px;
+	margin-top: 18px;
+	background: #fa5c37;
+	cursor: pointer;
+}
+/*商品列表*/
+.goods_list{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.goods_list_main{
+	width: 962px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+}
+.goods_title{
+	background: #f9f9f9;
+	border-top: none !important;
+}
+.goods_img img{
+	float: left;
+	margin: 14px 14px 14px 30px;
+}
+.goods_img div{
+	width: 268px;
+	float: left;
+	height: auto;
+	overflow: hidden;
+	text-align: left;
+}
+.goods_img p{
+	margin-top: 16px;
+	font-size: 14px;
+	color: #666;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.goods_img h6{
+	font-size: 14px;
+	color: #cdcccc;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+/*数量*/
+.shuliang{width: 100%;height: 28px;line-height: 28px;margin-bottom: 19px;float: left;}
+.shuliangtxt{float: left;font-size: 13px;color: #898989;margin-right: 30px;}
+.inpone{width: 30px;height: 28px;box-sizing: border-box;border: 1px solid #b5b5b6;font-size: 20px;line-height: 20px;text-align: center;background: #fff;float: left;cursor: pointer;color: #000;}
+#inpone{margin-left: 14px;}
+.inpone:active{background: #DCDDDD;float: left;}
+.inptwo{width: 66px;height: 26px; line-height: 26px; border-top: 1px solid #b5b5b6;border-bottom: 1px solid #b5b5b6;text-align: center;float: left;color: #000;}
+.shuliang span{float: left;font-size: 13px;color: #f8af00;margin-left: 12px;}
+
+
+.goods_list_main table{
+	width: 100%;
+}
+table,td{
+	border-bottom: 1px solid #ededed !important;
+}
+.goods_list_main tr{
+  height: 36px !important;
+  width: 100% !important;
+  line-height: 36px !important;
+  font-size: 14px !important;
+  color: #666;
+}
+.goods_list_main tr td a{
+	font-size: 14px;
+	color: #333;
+}
+.goods_list_main td{
+	text-align: center !important;
+	vertical-align: middle;
+}
+.goods_price h6{
+	font-size: 14px;
+	color: #cdcccc;
+}
+
+.goods_op{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.goods_op_main{
+	width: 962px;
+	height: 90px;
+	margin: 10px auto 30px auto;
+	background: #fff;
+	padding: 20px;
+}
+.goods_op_left{
+	float: left;
+	height: 90px;
+	width: 250px;
+	font-size: 14px;
+	color: #a1a1a1;
+}
+.goods_op_left label{
+	float: left;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.goods_op_left input{
+	vertical-align: middle;
+	margin: 0 6px 0 20px;
+}
+.goods_op_left span{
+	float: left;
+	margin-right: 30px;
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+}
+.goods_op_left img{
+	float: left;
+	margin-top: -6px;
+}
+.goods_op_right{
+	float: right;
+	height: 90px;
+	width: 340px;
+}
+.goods_op_right p{
+	font-size: 14px;
+	color: #666;
+	float: left;
+}
+.goods_op_right p i{
+	font-size: 20px;
+	color: #fa5c37;
+}
+.balance{
+	float: left;
+	height: 52px;
+	line-height: 52px;
+	margin-top: 20px;
+}
+.balance span{
+	font-size: 14px;
+	color: #b8b8b8;
+	margin-right: 30px;
+	cursor: pointer;
+	transition: .5s all ease;
+}
+.balance span:hover{
+	color: #333;
+	transition: .5s all ease;
+}
+.balance button{
+	width: 200px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	transition: .5s all ease;
+	background: #2fad68;
+	cursor: pointer;
+}
+.balance button:hover{
+	transition: .5s all ease;
+	background: #35c576;
+}
+.delete{
+	cursor: pointer;
+}
+.collect_move{
+	cursor: pointer;
+}

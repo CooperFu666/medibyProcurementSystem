@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/personal.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<!--内容-->
+		<div class="content">
+			<div class="content_main">
+				<!--路径-->
+				<div class="path">
+					<span>首页 > 个人中心 > 我的订单</span>
+				</div>
+				<!--侧栏-->
+				<div class="sidebar">
+					<ul>
+						<div class="sidebar_sub">
+							<p>订单管理</p>
+							<a href="myorder.html" class="siedbar_hover myorder_nav">我的订单</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>账户中心</p>
+							<a href="personal.html" class="personal_nav">个人中心</a>
+							<a href="userinfo.html" class="userinfo_nav">用户信息</a>
+							<a href="mycollect.html" class="mycollect_nav">我的收藏</a>
+							<a href="mytracks.html" class="mytracks_nav">我的足迹</a>
+							<a href="address.html" class="address_nav">收货地址</a>
+							<a href="mycoupon.html" class="mycoupon_nav">我的优惠券</a>
+							<a href="immp.html" class="immp_nav">资质认证</a>
+							<a href="myinvoice.html" class="myinvoice_nav">我的发票</a>
+							<a href="contact.html" class="contact_nav">联系客服</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>消息中心</p>
+							<a href="system.html" class="system_nav">系统消息</a>
+						</div>
+					</ul>
+				</div>
+				<!--右侧内容-->
+				<div class="personal">
+					<!--我的订单-->
+					<div class="myorder_main">
+						<h2 class="ava_nav">我的订单</h2>
+						<ul class="system_sub">
+							<li class="active pl">全部订单</li>
+							<li>待确认(1)</li>
+							<li>待付款</li>
+							<li>待发货</li>
+							<li>待收货</li>
+							<li class="br">已收货</li>
+						</ul>
+						<div class="myorder_content">
+							<div class="myorder_list">
+								<div class="myorder_start">
+									<span>已发货</span>
+									<button class="lookLog">查看物流</button>
+								</div>
+								<div class="myorder_info">
+									<p class="myorder_info_left">订单号：<i>2018022605713</i><span>|</span><i>伍建洲 </i><span>|</span><i>2018年2月26日 16:19:57</i></p>
+									<p class="myorder_info_right">订单金额：<a>1988.00</a>元</p>
+								</div>
+								<div class="myorder_goods">
+									<img src="../img/start_goods.png">
+									<div>
+										<p>美力光WIFI口腔内窥镜 M-888</p>
+										<p>1988.00元 × 1</p>
+									</div>
+									<button class="on_order_details">订单详情</button>
+									<button>发票信息</button>
+								</div>
+								<div class="myorder_goods">
+									<img src="../img/start_goods.png">
+									<div>
+										<p>美力光WIFI口腔内窥镜 M-888</p>
+										<p>1988.00元 × 1</p>
+									</div>
+								</div>
+							</div>
+							<div class="myorder_list">
+								<div class="myorder_start">
+									<input value="确认收货" disabled="disabled" type="text" />
+								</div>
+								<div class="myorder_info">
+									<p class="myorder_info_left">订单号：<i>2018022605713</i><span>|</span><i>伍建洲 </i><span>|</span><i>2018年2月26日 16:19:57</i></p>
+									<p class="myorder_info_right">订单金额：<a>1988.00</a>元</p>
+								</div>
+								<div class="myorder_goods">
+									<img src="../img/start_goods.png">
+									<div>
+										<p>美力光WIFI口腔内窥镜 M-888</p>
+										<p>1988.00元 × 1</p>
+									</div>
+									<button class="on_order_details">订单详情</button>
+									<button>发票信息</button>
+								</div>
+								<div class="myorder_goods">
+									<img src="../img/start_goods.png">
+									<div>
+										<p>美力光WIFI口腔内窥镜 M-888</p>
+										<p>1988.00元 × 1</p>
+									</div>
+								</div>
+							</div>
+							<div id="paging"></div>
+						</div>
+					</div>
+					<!--订单详情-->
+					<div class="order_details">
+						<h2 class="ava_nav">订单详情</h2>
+						<div class="order_hao">
+							<span class="order_hao_left">订单号：40180022605713</span>
+							<span class="order_hao_right">2018年3月17日 13:59</span>
+						</div>
+						<div class="order_path">
+							<span class="order_path_start">北京</span>
+							<span class="order_end">成都</span>
+						</div>
+						<h4 class="logistics_nav">物流公司：<i>顺丰</i> 快递单号：<i>40787478799</i></h4>
+						<div class="logistics_info">
+							<div class="logistics_info_time">
+								<div>
+									<h4>23:47</h4>
+									<p>2018-03-20</p>
+								</div>
+								<img src="../img/order_img.png">
+							</div>
+							<div class="logistics_info_text">
+								<p>快件派送至【蜂巢智能快递柜】，请您凭取件码至协信中心一楼8单元8栋架空层（单元门入口左侧）领取您的快递。</p>
+							</div>
+						</div>
+						<!--物流-->
+						<div class="logistics_box">
+							<div class="logistics_info">
+								<div class="logistics_info_time">
+									<div>
+										<h4>13:20</h4>
+										<p>2018-03-19</p>
+									</div>
+									<img src="../img/order_img.png">
+								</div>
+								<div class="logistics_info_text">
+									<p>北京市【北京运转中心】，正发往【成都运转中心】</p>
+								</div>
+							</div>
+							<div class="logistics_info">
+								<div class="logistics_info_time">
+									<div>
+										<h4>13:20</h4>
+										<p>2018-03-19</p>
+									</div>
+									<img src="../img/order_img.png">
+								</div>
+								<div class="logistics_info_text">
+									<p>到北京市【北京运转中心】</p>
+								</div>
+							</div>
+							<div class="logistics_info">
+								<div class="logistics_info_time">
+									<div>
+										<h4>13:20</h4>
+										<p>2018-03-19</p>
+									</div>
+								</div>
+								<div class="logistics_info_text">
+									<p>您的包裹已出库</p>
+								</div>
+							</div>
+						</div>
+						<!--商品-->
+						<div class="logistics_goods">
+							<div class="logistics_goods_list">
+								<img src="../img/start_goods.png">
+								<p>美力光WIFI口腔内窥镜 M-888</p>
+								<p>1988.00元 × <i>1</i></p>
+							</div>
+							<div class="logistics_goods_list">
+								<img src="../img/start_goods.png">
+								<p>美力光WIFI口腔内窥镜 M-888</p>
+								<p>1988.00元 × <i>1</i></p>
+							</div>
+						</div>
+						<!--收货信息-->
+						<div class="info_box">
+							<h2>收货信息</h2>
+							<p><span>姓       名：</span>刘韵洁</p>
+							<p><span>联系电话：</span>158****2541</p>
+							<p><span>收货地址：</span>四川 成都市 成华区 府青路二段25号 协信中心810</p>
+						</div>
+						<!--付款方式及下单时间-->
+						<div class="info_box">
+							<h2>付款方式及下单时间</h2>
+							<p><span>支付方式：</span>银联转账</p>
+							<p><span>下单时间：</span>2018年2月27日 13:56</p>
+						</div>
+						<!--发票信息-->
+						<div class="info_box">
+							<h2>发票信息</h2>
+							<p><span>发票类型：</span>增值税普通发票</p>
+							<p><span>发票内容：</span>购买商品明细</p>
+							<p><span>发票抬头：</span>公司</p>
+							<button>发票详情</button>
+						</div>
+						<!--总价-->
+						<div class="myorder_pirce">
+							<p><span>商品总价：</span><i>2199元</i></p>
+							<p><span>优惠金额：</span><i>-50元</i></p>
+							<p><span>运       费：</span><i>0元</i></p>
+							<p class="pirce_total"><span>订单金额：</span><i><a>1988.00</a>元</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--查看物流弹出框-->
+		<div class="dxt-test">
+			<div class="lookLog-box">
+				<div class="lookLog">
+					<h3>
+						物流信息
+						<p class="address_hide"></p>
+					</h3>
+				</div>
+				<div class="lookLog-boxB">
+					<div class="dxt-box">
+						<ul class="fristNav">
+							<li>
+								<img src="../img/carL.png" alt="">
+							</li>
+							<li>
+								<ul class="secondNav">
+									<li>物流公司</li>
+									<li>快递单号</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="secondNav telNumber">
+									<li>顺丰</li>
+									<li>4000000000000000000</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!--物流状态背景图-->
+					<div class="state"></div>
+					<div class="Logistics_News">
+						<div class="logistics_info">
+							<div class="logistics_info_time">
+								<div>
+									<h4>23:47</h4>
+									<p>2018-03-20</p>
+								</div>
+								<img src="../img/order_img.png">
+							</div>
+							<div class="logistics_info_textB">
+								<p>快件派送至【蜂巢智能快递柜】，请您凭取件码至协信中心一楼8单元8栋架空层（单元门入口左侧）领取您的快递。</p>
+							</div>
+						</div>
+						<div class="logistics_info">
+							<div class="logistics_info_time">
+								<div>
+									<h4>13:20</h4>
+									<p>2018-03-19</p>
+								</div>
+								<img src="../img/order_img.png">
+							</div>
+							<div class="logistics_info_textB">
+								<p>北京市【北京运转中心】，正发往【成都运转中心】</p>
+							</div>
+						</div>
+						<div class="logistics_info">
+							<div class="logistics_info_time">
+								<div>
+									<h4>13:20</h4>
+									<p>2018-03-19</p>
+								</div>
+								<img src="../img/order_img.png">
+							</div>
+							<div class="logistics_info_textB">
+								<p>到北京市【北京运转中心】</p>
+							</div>
+						</div>
+						<div class="logistics_info">
+							<div class="logistics_info_time">
+								<div>
+									<h4>13:20</h4>
+									<p>2018-03-19</p>
+								</div>
+							</div>
+							<div class="logistics_info_textB">
+								<p>您的包裹已出库</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!--发票信息弹出框-->
+		<!--<div class="invoice">-->
+
+		<!--</div>-->
+		<!--尾部-->
+		<div id="footer"></div>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/personal.js"></script>
+		<script>
+             $(".on_order_details").click(function(){
+             	$(".myorder_main").hide();
+             	$(".order_details").show();
+             });
+
+//             弹出框JS
+             $('.lookLog').click(function () {
+                 $('.dxt-test').show()
+             })
+			$('.address_hide').mousemove(function () {
+                $('.address_hide').addClass('hoverClose')
+            }).mouseout(function () {
+                $('.address_hide').removeClass('hoverClose')
+            })
+             $('.address_hide').click(function () {
+                 $('.dxt-test').hide(10)
+            })
+		</script>
+	</body>
+</html>

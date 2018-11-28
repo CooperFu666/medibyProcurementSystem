@@ -1,0 +1,32 @@
+/**{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+/*404居中*/
+.box{
+    width:678px;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+.button-B,.button-A{
+    background-color:#2fad68;
+    width:130px;
+    height:38px;
+    color:white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.button-B:hover,.button-A:hover{
+    background-color: #47c882;
+}
+p{
+    color:#999999;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.all-button{
+    margin-left: 240px;
+}

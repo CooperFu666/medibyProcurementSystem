@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/register.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="page_header"></div>
+		<!--内容-->
+		<div class="r_content">
+			<div class="r_content_main">
+				<h1>欢迎注册医加</h1>
+				<img src="../img/register_bar1.png" class="bar">
+				<div class="inp_box">
+					<input type="text" value="+ 86" class="phone_left"/><input type="text" placeholder="请输入您的手机号" class="phone"/>
+						<!--手机格式验证-->
+						<div class="phone_yz"></div>
+					<input type="text" placeholder="请输入手机验证码" class="phone_code"/><input class="hq_code" value="获取手机验证码" disabled="disabled"/>
+						<!--手机验证码验证-->
+						<div class="phone_code_yz"></div>
+					<input type="text" placeholder="请输入图片验证码" class="img_code"/><img src="../img/verification.png" class="verification">
+						<!--图片验证码验证-->
+						<div class="img_code_yz"></div>
+					<input type="text" placeholder="请设置你的登录密码" class="password_one"/><i class="confirm_one">设置密码</i>
+						<!--密码验证-->
+						<div class="password_one_yz"></div>
+					<input type="text" placeholder="请再次输入你的密码" class="password_two"/><i class="confirm_two">确认密码</i>
+						<!--二次密码验证码-->
+						<div class="password_two_yz"></div>
+					<button class="next_one">下一步</button>
+					<div class="protocol">
+						<input type="radio" checked="checked"/>我已阅读并同意《<a href="javascript:;">医加用户注册协议</a>》
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="page_footer"></div>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/register.js"></script>
+	</body>
+</html>

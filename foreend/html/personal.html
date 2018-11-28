@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/personal.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<!--内容-->
+		<div class="content">
+			<div class="content_main">
+				<!--路径-->
+				<div class="path">
+					<span>首页 > 个人中心 > 个人中心</span>
+				</div>
+				<!--侧栏-->
+				<div class="sidebar">
+					<ul>
+						<div class="sidebar_sub">
+							<p>订单管理</p>
+							<a href="myorder.html" class="myorder_nav">我的订单</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>账户中心</p>
+							<a href="personal.html" class="siedbar_hover personal_nav">个人中心</a>
+							<a href="userinfo.html" class="userinfo_nav">用户信息</a>
+							<a href="mycollect.html" class="mycollect_nav">我的收藏</a>
+							<a href="mytracks.html" class="mytracks_nav">我的足迹</a>
+							<a href="address.html" class="address_nav">收货地址</a>
+							<a href="mycoupon.html" class="mycoupon_nav">我的优惠券</a>
+							<a href="immp.html" class="immp_nav">资质认证</a>
+							<a href="myinvoice.html" class="myinvoice_nav">我的发票</a>
+							<a href="contact.html" class="contact_nav">联系客服</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>消息中心</p>
+							<a href="system.html" class="system_nav">系统消息</a>
+						</div>
+					</ul>
+				</div>
+				<!--右侧内容-->
+				<div class="personal">
+					<!--个人中心-->
+					<div class="personal_main">
+						<div class="info">
+							<div class="info_left">
+								<img src="../img/head_img.png">
+								<div class="info_left_text">
+									<h4>北京安邦合众</h4>
+									<h6 class="on_avatar">修改个人头像></h6>
+									<p>上次登录<span>2018-01-31 13:25:01</span></p>
+								</div>
+							</div>
+							<div class="info_right">
+								<p>账户完善度：<i>40%</i></p>
+								<p>绑定手机：<span>158****2541</span></p>
+								<p>绑定邮箱：<span>372287410qq.com</span></p>
+							</div>
+						</div>
+						<ul class="info_list">
+							<li>
+								<img src="../img/info1.png" class="info_list_icon">
+								<div class="info_list_text">
+									<h2>账号密码</h2>
+									<p>安全性高的密码可以使账户更安全，建议您定期更换密码。</p>
+								</div>
+								<a href="javascript:;"><button class="on_name">修改</button></a>
+							</li>
+							<li>
+								<img src="../img/info2.png" class="info_list_icon">
+								<div class="info_list_text">
+									<h2>绑定邮箱</h2>
+									<p>验证后可用于邮箱找回密码、接受订单提醒等，保障您的账户更加安全。</p>
+								</div>
+								<a href="javascript:;"><button class="on_mailbox">绑定</button></a>
+							</li>
+							<li>
+								<img src="../img/info3.png" class="info_list_icon">
+								<div class="info_list_text">
+									<h2>营业执照<span>&nbsp;❶&nbsp;未认证</span></h2>
+									<p>绑定后可用于手机找回密码、接收手机动态验证码等，使您的账户更加安全。</p>
+								</div>
+								<a href="javascript:;"><button>认证</button></a>
+							</li>
+							<li>
+								<img src="../img/info4.png" class="info_list_icon">
+								<div class="info_list_text">
+									<h2>医疗器械许可证<span>&nbsp;❶&nbsp;未认证</span></h2>
+									<p>绑定后可用于手机找回密码、接收手机动态验证码等，使您的账户更加安全。</p>
+								</div>
+								<a href="javascript:;"><button>认证</button></a>
+							</li>
+						</ul>
+						<!--修改头像-->
+						<div class="avatar">
+							<h2>修改头像</h2>
+							<div class="avatat_left">
+								<div class="tar">
+									<div class="img_box"><img src="../img/bar_img.png" class="tar_img"></div>
+								</div>
+								<p>支持JPEG/BMP/PNG,文件小于4M</p>
+								<span class="comm_file"><input type="file" readonly="readonly" capture="camera" accept="image/*" multiple id="immp" />点此上传</span>
+							</div>
+							<div class="avatar_right">
+								<h4>效果预览</h4>
+								<h6>你上传的图片会自动生成2种尺寸，请注意小尺寸的头像是否清晰。</h6>
+								<div class="preview">
+									<div class="img_box"><img src="../img/preview100.png" class="preview100"></div>
+									<p>100x100像素</p>
+								</div>
+								<div class="preview">
+									<div class="img_box"><img src="../img/preview60.png" class="preview60"></div>
+									<p>60x60像素</p>
+								</div>
+							</div>
+							<input type="button" value="保存" disabled="disabled" class="avatar_keep" />
+						</div>
+						<!--修改密码two-->
+						<div class="avapassword_two">
+							<h2 class="ava_nav">修改密码</h2>
+							<div class="inp_box">
+								<input type="text" placeholder="原登录密码" class="password_three"/><i class="confirm_three">原始密码</i>
+									<!--密码验证-->
+									<div class="password_three_yz"></div>
+								<input type="text" placeholder="新登录密码" class="password_one"/><i class="confirm_one ">设置密码</i>
+									<!--密码验证-->
+									<div class="password_one_yz"></div>
+								<input type="text" placeholder="确定密码" class="password_two"/><i class="confirm_two">确认密码</i>
+									<!--二次密码验证码-->
+									<div class="password_two_yz"></div>
+								<button class="next_two">下一步</button>
+							</div>
+						</div>
+						<!--修改密码end-->
+						<div class="avapassword_end">
+							<h2 class="ava_nav">修改密码</h2>
+							<div class="inp_box center">
+								<img src="../img/avapas.png" class="hongbao">
+								<p class="ava_yes">密码修改成功</p>
+								<a href="login.html" style="display: block;"><button class="next_end">去登录</button></a>
+								<p class="tiaozhuan"><span id="num">5</span>s后自动跳转登录页</p>
+							</div>
+						</div>
+						<!--绑定邮箱one-->
+						<div class="mailbox">
+							<h2 class="ava_nav">绑定邮箱</h2>
+							<div class="inp_box">
+								<input type="text" placeholder="请输入邮箱地址" class="email_add"/><i class="confirm_one confirm_email">邮箱地址</i>
+									<!--邮箱验证-->
+									<div class="email_add_yz"></div>
+								<input type="text" placeholder="请输入图片验证码" class="img_code_two"/><img src="../img/verification.png" class="verification">
+									<!--图片验证码验证-->
+									<div class="img_code_two_yz" style="top: 130px;"></div>
+								<button class="mailbox_next">下一步</button>
+							</div>
+						</div>
+						<!--绑定邮箱end-->
+						<div class="mailbox_end">
+							<h2 class="ava_nav">绑定邮箱</h2>
+							<div class="inp_box center" style="width: 530px;">
+								<img src="../img/avatext.png" class="hongbao">
+								<p class="tiaozhuan" style="margin-bottom: 30px;">验证邮件已经发送到 nengzongtan@gmail.com，请登录邮箱基础下一步操作</p>
+								<a href="index.html" style="display: block;"><button class="next_end">去邮箱验证</button></a>
+								<a href="personal.html"><p class="tiaozhuan">返回账户中心</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="footer"></div>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/personal.js" ></script>
+	</body>
+</html>

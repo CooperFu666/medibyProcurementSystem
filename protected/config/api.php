@@ -1,0 +1,46 @@
+<?php
+return [
+    'v1' => [
+        'common.closeProcurement' => 'ProcurementFront/CloseProcurement',
+        'user.generateCookie' => 'ProcurementFront/GenerateCookie',
+        'user.verificationCode' => 'ProcurementFront/GetVerificationCode',
+        'user.login' => 'ProcurementFront/Login',
+        'user.passwordReset' => 'ProcurementFront/PasswordReset',
+        'index.getBrandList' => 'ProcurementFront/GetBrandList',
+        'index.getCommodityInfo' => 'ProcurementFront/GetCommodityInfo',
+        'generate.code' => 'ProcurementFront/GenerateCode',
+        'run.researchAuth' => 'ProcurementFront/RunResearchAuth',
+        'run.application' => 'ProcurementFront/RunApplication',
+        'get.purchaseCommodity' => 'ProcurementFront/GetPurchaseCommodity',
+        'run.researchReport' => 'ProcurementFront/RunResearchReport',
+        'run.researchBaseInfo' => 'ProcurementFront/RunResearchBaseInfo',
+        'get.myResearch' => 'ProcurementFront/GetMyResearch',
+        'withdrawal.research' => 'ProcurementFront/WithdrawalResearch',
+        'run.isPurchase' => 'ProcurementFront/IsPurchase',
+        'get.pricingIndex' => 'ProcurementFront/GetPricingIndex',
+        're.research' => 'ProcurementFront/ReResearch',
+        'run.targetPrice' => 'ProcurementFront/RunTargetPrice',
+        'get.research' => 'ProcurementFront/GetResearch',
+        'get.researchTitle' => 'ProcurementFront/GetResearchTitle',
+        'run.purchase' => 'ProcurementFront/RunPurchase',
+        'get.purchaseReport' => 'ProcurementFront/GetPurchaseReport',
+        'run.purchaseReport' => 'ProcurementFront/RunPurchaseReport',
+        're.pricing' => 'ProcurementFront/RePricing',
+        'get.researchLast' => 'ProcurementFront/GetResearchLast',
+        're.researchEnd' => 'ProcurementFront/ReResearchEnd',
+        'purchase.finish' => 'ProcurementFront/PurchaseFinish',
+
+        'get.userList' => 'ProcurementFront/GetUserList',
+        'common.getUserList' => 'ProcurementFront/CommonGetUserList',
+        'index.news' => 'ProcurementIndex/IndexNews',
+        'index.toDo' => 'ProcurementIndex/IndexToDo',
+        'index.getDoc' => 'ProcurementIndex/IndexGetDoc',
+        'get.workIndex' => 'ProcurementIndex/GetWorkIndex',
+        'index.details' => 'ProcurementIndex/IndexDetails',
+        're.start' => 'ProcurementIndex/ReStart',
+        'index.reStartAuth' => 'ProcurementIndex/ReStartAuth',
+    ],
+    'v2' => [
+
+    ]
+];

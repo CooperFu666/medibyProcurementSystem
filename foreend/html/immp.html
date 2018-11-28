@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>资质认证</title>
+	<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/personal.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<!--内容-->
+		<div class="content">
+			<div class="content_main">
+				<!--路径-->
+				<div class="path">
+					<span>首页 > 个人中心 > 资质认证</span>
+				</div>
+				<!--侧栏-->
+				<div class="sidebar">
+					<ul>
+						<div class="sidebar_sub">
+							<p>订单管理</p>
+							<a href="myorder.html" class="myorder_nav">我的订单</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>账户中心</p>
+							<a href="personal.html" class="personal_nav">个人中心</a>
+							<a href="userinfo.html" class="userinfo_nav">用户信息</a>
+							<a href="mycollect.html" class="mycollect_nav">我的收藏</a>
+							<a href="mytracks.html" class="mytracks_nav">我的足迹</a>
+							<a href="address.html" class="address_nav">收货地址</a>
+							<a href="mycoupon.html" class="mycoupon_nav">我的优惠券</a>
+							<a href="immp.html" class="siedbar_hover immp_nav">资质认证</a>
+							<a href="myinvoice.html" class="myinvoice_nav">我的发票</a>
+							<a href="contact.html" class="contact_nav">联系客服</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>消息中心</p>
+							<a href="system.html" class="system_nav">系统消息</a>
+						</div>
+					</ul>
+				</div>
+				<!--右侧内容-->
+				<div class="personal">
+					<!--资质认证-->
+					<div class="immp_main">
+						<h2 class="ava_nav">资质认证</h2>
+						<div class="immp_content">
+							<ul class="mycoupon_sub">
+								<li class="immp_sub_yes active">营业执照</li>
+								<li class="immp_sub_no">医疗器械许可证</li>
+							</ul>
+							<div class="immp_content_yes">
+								<div class="myinvoice_state">
+									<h4>请验证您的营业证书以保障平台的公正性和您的权益。</h4>
+									<h6>当前状态<i class="info_no">❶未提交</i></h6>
+								</div>
+								<div class="licence_box">
+									<div class="licence">
+										<img src="../img/licence.png" class="licence_img">
+									</div>
+									<div class="licence_text">
+										<p>1. 图片须为营业证书的彩色照片或扫描件，涂改后无效 </p>
+										<p>2. 证件须在有效期之内</p>
+										<p>3. 图片必须清晰、完整、方向正确，并且不能带有其他网站的logo或无关的标信息</p>
+										<p>4. 图片支持jpg、jpeg、png格式，大小不超过2M</p>
+										<h4>注：您的证件信息不会被其他网友看到，我们将严格保密，请放行上传</h4>
+									</div>
+								</div>
+								<span class="comm_file licence_file"><input type="file" readonly="readonly" capture="camera" accept="image/*" multiple id="immp_file" />点此上传</span>
+								<div>
+									<button class="licence_anew">重新上传</button>
+									<button class="licence_off">取消</button>
+									<button class="licence_keep">保存</button>
+								</div>
+							</div>
+							<div class="immp_content_no">
+								<div class="myinvoice_state">
+									<h4>请验证您的医疗器械许可证以保障平台的公正性和您的权益。</h4>
+									<h6>当前状态<i class="info_no">❶未提交</i></h6>
+								</div>
+								<div class="licence_box">
+									<div class="licence">
+										<img src="../img/medical.png" class="medical_img">
+									</div>
+									<div class="licence_text">
+										<h4>如果你是2014年之后注册的公司，请上传《医疗器械许可证》和《二类备案证书》</h4>
+										<p>1. 图片须为医疗器械经营许可证的彩色照片或扫描件，涂改后无效  </p>
+										<p>2. 证件须在有效期之内</p>
+										<p>3. 图片必须清晰、完整、方向正确，并且不能带有其他网站的logo或无关的标信息</p>
+										<p>4. 图片支持jpg、jpeg、png格式，大小不超过2M</p>
+										<h4>注：您的证件信息不会被其他网友看到，我们将严格保密，请放行上传</h4>
+									</div>
+								</div>
+								<span class="comm_file medical_file"><input type="file" readonly="readonly" capture="camera" accept="image/*" multiple id="medical_file" />点此上传</span>
+								<div>
+									<button class="licence_anew">重新上传</button>
+									<button class="licence_off">取消</button>
+									<button class="licence_keep">保存</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="footer"></div>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/personal.js" ></script>
+	</body>
+</html>

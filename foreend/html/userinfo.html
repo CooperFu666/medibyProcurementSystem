@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户信息</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/personal.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<!--内容-->
+		<div class="content">
+			<div class="content_main">
+				<!--路径-->
+				<div class="path">
+					<span>首页 > 个人中心 > 用户信息</span>
+				</div>
+				<!--侧栏-->
+				<div class="sidebar">
+					<ul>
+						<div class="sidebar_sub">
+							<p>订单管理</p>
+							<a href="myorder.html" class="myorder_nav">我的订单</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>账户中心</p>
+							<a href="personal.html" class="personal_nav">个人中心</a>
+							<a href="userinfo.html" class="siedbar_hover userinfo_nav">用户信息</a>
+							<a href="mycollect.html" class="mycollect_nav">我的收藏</a>
+							<a href="mytracks.html" class="mytracks_nav">我的足迹</a>
+							<a href="address.html" class="address_nav">收货地址</a>
+							<a href="mycoupon.html" class="mycoupon_nav">我的优惠券</a>
+							<a href="immp.html" class="immp_nav">资质认证</a>
+							<a href="myinvoice.html" class="myinvoice_nav">我的发票</a>
+							<a href="contact.html" class="contact_nav">联系客服</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>消息中心</p>
+							<a href="system.html" class="system_nav">系统消息</a>
+						</div>
+					</ul>
+				</div>
+				<!--右侧内容-->
+				<div class="personal">
+					<!--用户信息-->
+					<div class="userinfo_main">
+						<!--信息展示-->
+						<div class="userinfo_main_text">
+							<h2 class="ava_nav">用户信息</h2>
+							<div class="main_text">
+								<div class="main_text_left"><span>公司名称 </span>四川国邦华众生物科技有限公司 </div>
+								<div class="main_text_left"><span>所在地</span>四川省 成都市 成华区</div>
+							</div>
+							<div class="main_text">
+								<div class="main_text_left"><span>详细地址</span>府青路二段25号协信中心810</div>
+								<div class="main_text_left"><span>公司性质</span>医疗器械分销商</div>
+							</div>
+							<div class="main_text">
+								<div class="main_text_left"><span>联系人</span>赵**</div>
+								<div class="main_text_left"><span>联系手机</span>158****2541</div>
+							</div>
+							<div class="main_text">
+								<div class="main_text_left"><span>邮箱</span>372287410@qq.com</div>
+							</div>
+							<button class="alter">修改</button>
+						</div>
+						<!--信息input-->
+						<div class="userinfo_inp_box">
+							<h2 class="ava_nav">用户信息</h2>
+							<div class="inp_box_inp">
+								<p>公司名称</p>
+								<input type="text" placeholder="请输入您的公司名称" class="corporate"/>
+								<span class="corporate_yz"></span>
+							</div>
+							<div class="inp_box_inp">
+								<p>所在地</p>
+								<form action="" name="form1">
+									<div class="item" id="Province">
+										<i>请选择省份</i>
+										<ul>
+											<li>请选择省份</li>
+										</ul>
+										<input type="hidden" name="cho_Province" value="请选择省份" />
+									</div>
+									<div class="item" id="City">
+										<i>请选择城市</i>
+										<ul>
+											<li>请选择城市</li>
+										</ul>
+										<input type="hidden" name="cho_City" value="请选择城市" />
+									</div>
+									<div class="item mr" id="Area">
+										<i>请选择地区</i>
+										<ul>
+											<li>请选择地区</li>
+										</ul>
+										<input type="hidden" name="cho_Area" value="请选择地区" />
+									</div>
+								</form>
+							</div>
+							<div class="inp_box_inp">
+								<p>详细地址</p>
+								<input type="text" placeholder="请输入详细地址、如道路、门牌号、楼栋号、单元室等" class="address"/>
+								<span class="address_yz"></span>
+							</div>
+							<div class="select_box inp_box_inp">
+								<p>企业类型</p>
+								<input id="myselect" type="text" class="company" value="选择类型" readonly="readonly">
+							  	<ul class="select_ul">
+									<li>医疗器械分销商</li>
+									<li>公立医院</li>
+									<li>民营医院</li>
+									<li>高校</li>
+									<li>体检机构</li>
+									<li>诊所</li>
+									<li>其他</li>
+							  	</ul>
+							  	<span class="company_yz"></span>
+							</div>
+							<div class="inp_box_inp">
+								<p>联系人</p>
+								<input type="text" placeholder="请输入联系人" class="linkman"/>
+								<span class="linkman_yz"></span>
+							</div>
+							<div class="inp_box_inp">
+								<p>联系手机</p>
+								<input type="text" placeholder="请输入联系手机" class="contact_phone"/>
+								<span class="contact_phone_yz"></span>
+							</div>
+							<div class="inp_box_inp">
+								<p>邮箱</p>
+								<input type="text" placeholder="请输入邮箱" class="contact_email"/>
+								<span class="contact_email_yz"></span>
+							</div>
+							<button class="hold">保存</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="footer"></div>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/city.min.js"></script>
+    	<script src="../js/jquery.cityselect.js"></script>
+		<script type="text/javascript" src="../js/personal.js" ></script>
+		<script>
+			$.fn.citySelect();
+		</script>
+	</body>
+</html>

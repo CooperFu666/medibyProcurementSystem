@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>收货地址</title>
+	<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/personal.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<!--内容-->
+		<div class="content">
+			<div class="content_main">
+				<!--路径-->
+				<div class="path">
+					<span>首页 > 个人中心 > 收货地址</span>
+				</div>
+				<!--侧栏-->
+				<div class="sidebar">
+					<ul>
+						<div class="sidebar_sub">
+							<p>订单管理</p>
+							<a href="myorder.html" class="myorder_nav">我的订单</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>账户中心</p>
+							<a href="personal.html" class="personal_nav">个人中心</a>
+							<a href="userinfo.html" class="userinfo_nav">用户信息</a>
+							<a href="mycollect.html" class="mycollect_nav">我的收藏</a>
+							<a href="mytracks.html" class="mytracks_nav">我的足迹</a>
+							<a href="address.html" class="siedbar_hover address_nav">收货地址</a>
+							<a href="mycoupon.html" class="mycoupon_nav">我的优惠券</a>
+							<a href="immp.html" class="immp_nav">资质认证</a>
+							<a href="myinvoice.html" class="myinvoice_nav">我的发票</a>
+							<a href="contact.html" class="contact_nav">联系客服</a>
+						</div>
+						<div class="sidebar_sub">
+							<p>消息中心</p>
+							<a href="system.html" class="system_nav">系统消息</a>
+						</div>
+					</ul>
+				</div>
+				<!--右侧内容-->
+				<div class="personal">
+					<!--收货地址-->
+					<div class="address_main">
+						<h2 class="ava_nav">收货地址<span>您已创建4 个收货地址，最多可创建20个</span></h2>
+						<div class="new_address">
+							<div>＋</div>
+							<p>添加新地址</p>
+						</div>
+						<div class="obj_address">
+							<h4>李斐飞<span>默认地址</span></h4>
+							<p>158****2541</p>
+							<p>四川省 成都市 武侯区</p>
+							<p>锦绣路1号保利中心A区A座1709 (610000)</p>
+							<h6>
+								<span>设为默认地址</span>
+								<span>修改</span>
+								<span>删除</span>
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="alert">
+				<div class="address_text">
+					<h2>添加收货地址<p class="address_hide">╳</p></h2>
+					<div class="address_text_inp">
+						<input type="text" placeholder="姓名" class="address_name" />
+						<input type="text" placeholder="手机" class="address_phone" />
+						<form action="" name="form1">
+							<div class="item chenge" id="Province">
+								<i>请选择省份</i>
+								<ul>
+									<li>请选择省份</li>
+								</ul>
+								<input type="hidden" name="cho_Province" value="请选择省份" />
+							</div>
+							<div class="item chenge" id="City">
+								<i>请选择城市</i>
+								<ul>
+									<li>请选择城市</li>
+								</ul>
+								<input type="hidden" name="cho_City" value="请选择城市" />
+							</div>
+							<div class="item chenge mr" id="Area">
+								<i>请选择地区</i>
+								<ul>
+									<li>请选择地区</li>
+								</ul>
+								<input type="hidden" name="cho_Area" value="请选择地区" />
+							</div>
+						</form>
+						<input type="text" placeholder="详细地址" class="address_site" />
+						<input type="text" placeholder="邮编" class="address_email" />
+					</div>
+					<div class="operate">
+						<button class="operate_yes">保存</button>
+						<button class="operate_on">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="footer"></div>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/city.min.js"></script>
+    	<script src="../js/jquery.cityselect.js"></script>
+		<script type="text/javascript" src="../js/personal.js" ></script>
+		<script>
+			$.fn.citySelect();
+		</script>
+	</body>
+</html>

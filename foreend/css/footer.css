@@ -1,0 +1,257 @@
+/*初始化*/
+
+.hovertwo{
+	background: #2fad68 !important;
+}
+/*尾部*/
+.footer{
+	width: 100%;
+	height: 318px;
+	background: #fff;
+}
+.footer_main{
+	width: 1002px;
+	height: 318px;
+	background: #fff;
+	margin: 0 auto;
+}
+.mass{
+	width: 982px;
+	height: 137px;
+	border-bottom: 1px solid #eaeaea;
+	padding-left: 21px;
+}
+.mass li{
+	float: left;
+	padding: 0 80px;
+	text-align: center;
+}
+.mass li img{
+	margin: 29px auto 10px auto;
+}
+.mass li:hover img{
+	animation: masshover 2s infinite;
+}
+@keyframes masshover {
+    0% {
+		transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.mass li p{
+	font-size: 16px;
+	color: #333;
+	transition: 1s all ease;
+}
+.mass li:hover p{
+	color: #2dad69;
+	transition: 1s all ease;
+}
+.footer_xinxi{
+	width: 1002px;
+	height: 134px;
+	padding-top: 46px;
+}
+.follow{
+	width: 257px;
+	height: 97px;
+	float: left;
+	position: relative;
+}
+.follow_logo{
+	position: absolute;
+	top: -15px;
+	left: 0;
+	animation: follow_logo1 2s infinite;
+}
+@keyframes follow_logo1 {
+    0% {
+		transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -8px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+.follow_logo_footer{
+	position: absolute;
+	top: 84px;
+	left: 25px;
+	animation: follow_logo2 2s infinite;
+}
+@keyframes follow_logo2 {
+    0% {
+		transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.follow_text{
+	width: 102px;
+	height: 25px;
+	background: url(../img/follow_text_bj.png) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	line-height: 25px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 17px;
+	margin-left: 81px;
+}
+.follow_icon{
+	width: 128px;
+	height: 36px;
+	margin: 8px 0 0 82px;
+}
+.follow_icon div{
+	float: left;
+	margin-right: 10px;
+	border-radius: 50%;
+	background: #dcdcdc;
+	width: 36px;
+	height: 36px;
+	position: relative;
+	cursor: pointer;
+}
+.follow_icon div img{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.follow_weixin,.follow_weibo,.follow_xiaochengxu{
+	width: 68px;
+	height: 68px;
+	background: #fff;
+	position: relative;
+	position: absolute;
+	left: 66px;
+	top: 96px;
+	box-shadow: 0px 0px 10px #ccc;
+	display: none;
+}
+.follow_weixin:after,.follow_weibo:after,.follow_xiaochengxu:after{
+	content: "";
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border-top: 4px solid transparent;
+	border-right: 4px solid #fff;
+	border-bottom: 4px solid transparent;
+	transform:rotate(90deg);
+	left: 30px;
+	top: -6px;
+	box-shadow: 0px 0px 10px #ccc;
+}
+.follow_weixin img,.follow_weibo img,.follow_xiaochengxu img{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.follow_weibo{
+	left: 112px;
+}
+.follow_xiaochengxu{
+	left: 158px;
+}
+.follow_list{
+	width: 436px;
+	height: 97px;
+	border-left: 1px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+	float: left;
+	padding-left: 20px;
+}
+.follow_list li{
+	float: left;
+	width: 70px;
+	height: 97px;
+	text-align: left;
+	margin: 0 18px;
+}
+.follow_list li h4{
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 12px;
+}
+.follow_list li a{
+	display: block;
+	font-size: 12px;
+	color: #888;
+	line-height: 25px;
+	transition: .5s all ease;
+}
+.follow_list li a:hover{
+	color: #2dad69;
+	transition: .5s all ease;
+}
+.follow_phone{
+	width: 264px;
+	height: 97px;
+	float: left;
+	padding-left: 23px;
+}
+.follow_phone img{
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-top: 15px;
+	float: left;
+}
+.follow_phone h4{
+	font-size: 26px;
+	font-weight: bold;
+	color: #333;
+	margin-top: 16px;
+	width: 200px;
+	float: left;
+}
+.follow_phone p{
+	font-size: 18px;
+	color: #333;
+	margin-top: 12px;
+	width: 200px;
+	float: left;
+}
+/*底部*/
+.dibu{
+	width: 100%;
+	height: 60px;
+	background: #29292d;
+}
+.dibu_main{
+	width: 1002px;
+	height: 48px;
+	background: #29292d;
+	text-align: center;
+	padding-top: 12px;
+	margin: 0 auto;
+}
+.dibu_main p{
+	font-size: 12px;
+	color: #888;
+	line-height: 23px;
+}
+.dibu_main p a{
+	font-size: 12px;
+	color: #888;
+}
+.dibu_main p a:hover{
+	text-decoration: underline;
+}

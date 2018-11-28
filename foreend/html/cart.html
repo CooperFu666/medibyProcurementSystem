@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/cart.css" />
+	</head>
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<div class="top_main">
+				<a href="index.html" class="yj_index">医加首页</a>
+				<ul class="top_new">
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+					<li><a href="personal.html">我的收藏</a></li>
+					<li class="br"><a href="javascript:;">客服服务</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--头部-->
+		<div class="header">
+			<div class="header_main">
+				<div class="logo">
+					<a href="index.html">
+						<img src="../img/logo1.png" class="logo1">
+						<img src="../img/logo2.png" class="logo2">
+						<img src="../img/logo3.png" class="logo3">
+					</a>
+				</div>
+				<span>购物车</span>
+			</div>
+		</div>
+		<!--检测登录状态-->
+		<div class="test_login">
+			<div class="test_login_main">
+				<img src="../img/no.png"><span>您还没有登录！登录后购物车的商品将保存到您账号中</span><a href="login.html"><button>立即登录</button></a>
+			</div>
+		</div>
+		<!--商品列表-->
+		<div class="goods_list">
+			<div class="goods_list_main">
+				<table>
+					<tr class="goods_title">
+						<td width="8%"><label style="cursor: pointer;"><input type="checkbox" checked class="all" />全选</label></td>
+						<td width="40%" style="text-align: left !important;text-indent: 30px;">商品信息</td>
+						<td width="17%">单价</td>
+						<td width="18%">数量</td>
+						<td width="17%">操作</td>
+					</tr>
+					<tr class="list">
+						<td><input type="checkbox" name='ckb' checked style="float: left;margin-left: 18px;" class="chek" /></td>
+						<td class="goods_img">
+							<img src="../img/goods_img1.png">
+							<div>
+								<p>迈瑞Mindray黑白台式超声DP-5</p>
+								<h6>订货号: V147562</h6>
+							</div>
+						</td>
+						<td>¥ <i class="price">2950.00</i></td>
+						<td>
+							<input type="button" value="-" class="inpone minus" id="inpone" />
+			                <span class="inptwo num" id="inptwo">1</span>
+		                    <input type="button" value="+" class="inpone plus" id="inpthree" />
+						</td>
+						<!--<td class="goods_price">
+							<p class="ShopTotal">¥ 2950.00</p>
+							<h6>70.9kg</h6>
+						</td>-->
+						<td>
+							<a href="javascript:;"><h4 onselectstart="return false">移到我的收藏</h4></a>
+						</td>
+					</tr>
+					<tr class="list">
+						<td><input type="checkbox" name='ckb' checked style="float: left;margin-left: 18px;" class="chek" /></td>
+						<td class="goods_img">
+							<img src="../img/goods_img1.png">
+							<div>
+								<p>迈瑞Mindray黑白台式超声DP-5</p>
+								<h6>订货号: V147562</h6>
+							</div>
+						</td>
+						<td>¥ <i class="price">2950.00</i></td>
+						<td>
+							<input type="button" value="-" class="inpone minus" id="inpone" />
+			                <span class="inptwo num" id="inptwo">1</span>
+		                    <input type="button" value="+" class="inpone plus" id="inpthree" />
+						</td>
+						<td>
+							<a href="javascript:;"><h4>移到我的收藏</h4></a>
+						</td>
+					</tr>
+					<tr class="list">
+						<td><input type="checkbox" name='ckb' checked style="float: left;margin-left: 18px;" class="chek" /></td>
+						<td class="goods_img">
+							<img src="../img/goods_img1.png">
+							<div>
+								<p>迈瑞Mindray黑白台式超声DP-5</p>
+								<h6>订货号: V147562</h6>
+							</div>
+						</td>
+						<td>¥ <i class="price">2950.00</i></td>
+						<td>
+							<input type="button" value="-" class="inpone minus" id="inpone" />
+			                <span class="inptwo num" id="inptwo">1</span>
+		                    <input type="button" value="+" class="inpone plus" id="inpthree" />
+						</td>
+						<td>
+							<a href="javascript:;"><h4>移到我的收藏</h4></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="goods_op">
+				<div class="goods_op_main">
+					<div class="goods_op_left">
+						<label><input type="checkbox" checked class="all" />全选</label>
+						<span onselectstart="return false">移到我的收藏</span>
+						<img src="../img/delete1.png" class="delete" onclick="delTr2()">
+					</div>
+					<div class="goods_op_right">
+						<p onselectstart="return false">已选择： <span id="totalNum">0</span>件商品，共计：¥ <i class="ShopTotal">12234.00</i></p>
+						<div class="balance">
+							<span onselectstart="return false">返回继续购物></span>
+							<button>去结算</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="footer"></div>
+		<script type="text/javascript" src="../js/jquery.js"></script>
+		<script type="text/javascript" src="../js/cart.js" ></script>
+	</body>
+</html>

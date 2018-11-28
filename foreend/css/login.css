@@ -1,0 +1,283 @@
+/*初始化*/
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ccc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ccc;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ccc;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ccc;
+}
+/*头部*/
+.header{
+	width: 100%;
+	height: 130px;
+	box-shadow: 0 3px 5px #eee;
+}
+.header_main{
+	width: 1002px;
+	height: 130px;
+	margin: 0 auto;
+}
+.logo{
+	width: 200px;
+	height: 140px;
+	float: left;
+}
+.logo a{
+	display: inline-block;
+	position: relative;
+}
+.logo .logo1{
+	margin-top: 18px;
+	animation: mylogo1 2s infinite;
+}
+@keyframes mylogo1 {
+    0% {
+		transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -8px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+.logo .logo2{
+	position: absolute;
+	top: 116px;
+	left: 25px;
+	animation: mylogo2 2s infinite;
+}
+@keyframes mylogo2 {
+    0% {
+		transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.logo .logo3{
+	position: absolute;
+	top: 51px;
+	left: 82px;
+}
+.header_main span{
+	font-size: 22px;
+	color: #2fad68;
+	line-height: 160px;
+}
+/*内容*/
+.content{
+	width: 100%;
+	height: 557px;
+	background: #f5f5f5;
+}
+.content_main{
+	width: 1002px;
+	height: 557px;
+	margin: 0 auto;
+	position: relative;
+}
+.login_img{
+	position: absolute;
+	top: 172px;
+	left: 48px;
+}
+.content_box{
+	width: 320px;
+	height: 300px;
+	background: #fff;
+	padding: 30px;
+	position: absolute;
+	top: 99px;
+	right: 0;
+}
+.content_box h2{
+	font-size: 20px;
+	color: #2fad68;
+}
+.content_box span{
+	font-size: 14px;
+	color: #f7696b;
+	position: absolute;
+}
+.name_yz{
+	font-size: 14px;
+	color: #f7696b;
+	position: absolute;
+	top: 114px;
+	left: 32px;
+}
+.password_yz{
+	font-size: 14px;
+	color: #f7696b;
+	position: absolute;
+	top: 176px;
+	left: 32px;
+}
+.name_box,.password_box{
+	width: 320px;
+	height: 42px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	margin-top: 20px;
+	transition: .5s all ease;
+	border-radius: 2px;
+}
+.name_box_img,.password_box_img{
+	width: 39px;
+	height: 28px;
+	border-right: 1px solid #ddd;
+	margin-top: 6px;
+	position: relative;
+	float: left;
+}
+.name_box_img img,.password_box_img img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.name_box input,.password_box input{
+	width: 276px;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+	font-size: 14px;
+	color: #333;
+	text-indent: 9px;
+	border-radius: 2px;
+}
+.login{
+	width: 320px;
+	height: 42px;
+	background: #2fad68;
+	transition: .5s all ease;
+	text-align: center;
+	line-height: 42px;
+	font-size: 18px;
+	color: #fff;
+	border: none;
+	outline: inherit;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.login:hover{
+	background: #21cf70;
+	transition: .5s all ease;
+}
+.miandeng{
+	width: 110px;
+	height: 15px;
+	line-height: 15px;
+	margin-left: 4px;
+	float: left;
+}
+.miandeng label input{
+	margin-right: 8px;
+	vertical-align: middle;
+}
+.miandeng label span{
+	font-size: 14px;
+	color: #666;
+}
+.wangji_zhuce{
+	/*width: 140px;*/
+	width: 60px;
+	height: 15px;
+	line-height: 15px;
+	float: right;
+}
+.wangji_zhuce a{
+	font-size: 14px;
+}
+.wangji{
+	color: #999;
+	margin-right: 10px;
+	transition: .5s all ease;
+}
+.wangji:hover{
+	color: #666;
+	transition: .5s all ease;
+}
+.zhuce{
+	color: #2fad68;
+	text-decoration: underline;
+	transition: .5s all ease;
+}
+.zhuce:hover{
+	color: #21cf70;
+	transition: .5s all ease;
+}
+/*尾部*/
+.footer{
+	width: 100%;
+	height: 180px;
+}
+.footer_main{
+	width: 1002px;
+	height: 180px;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer_nav{
+	width: 706px;
+	height: 12px;
+	margin: 0 auto;
+	padding:32px 0 20px 0;
+}
+.footer_nav li{
+	float: left;
+	width: 100px;
+	height: 12px;
+	line-height: 12px;
+	text-align: center;
+	border-right: 1px solid #888;
+}
+.footer_nav li a{
+	font-size: 14px;
+	color: #888;
+	transition: .5s all ease;
+}
+.footer_nav li:hover a{
+	color: #2dad69;
+	transition: .5s all ease;
+}
+.footer_main p{
+	font-size: 12px;
+	color: #b7b7b7;
+	line-height: 22px;
+}
+.footer_main p a{
+	font-size: 12px;
+	color: #b7b7b7;
+}
+.footer_main p a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
